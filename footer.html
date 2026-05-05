@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estate Court Accounting Footer</title>
+    <style>
+      .footer-embed-body {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        background: #0b2342;
+      }
+
+      .site-footer {
+        background: #0b2342;
+        color: #dce4f0;
+        margin: 0;
+      }
+
+      .footer-content {
+        max-width: 1080px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+        gap: 1rem;
+        padding: 0.95rem 1rem;
+      }
+
+      .site-footer a {
+        color: #dce4f0;
+        text-decoration: none;
+      }
+
+      .footer-left {
+        margin: 0;
+        text-align: left;
+        font-weight: 700;
+      }
+
+      .footer-right {
+        margin: 0;
+        text-align: right;
+      }
+
+      .footer-logo {
+        display: block;
+        height: 42px;
+        width: auto;
+      }
+
+      .linkedin-link {
+        display: inline-flex;
+        align-items: center;
+        color: #dce4f0;
+        text-decoration: none;
+      }
+
+      .linkedin-icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        border: 2px solid #dce4f0;
+        border-radius: 4px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, sans-serif;
+        font-size: 0.9rem;
+        font-weight: 700;
+        line-height: 1;
+        text-transform: lowercase;
+      }
+
+      @media (max-width: 700px) {
+        .footer-content {
+          grid-template-columns: 1fr;
+          justify-items: center;
+          text-align: center;
+          gap: 0.55rem;
+          padding: 0.75rem 0.75rem;
+        }
+
+        .footer-left,
+        .footer-right {
+          text-align: center;
+        }
+
+        .footer-logo {
+          height: 36px;
+        }
+      }
+    </style>
+  </head>
+  <body class="footer-embed-body">
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p class="footer-left">
+          <a
+            class="linkedin-link"
+            href="https://www.linkedin.com/company/estate-court-accounting-llc/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Estate Court Accounting on LinkedIn"
+            ><span class="linkedin-icon" aria-hidden="true">in</span></a
+          >
+        </p>
+        <img class="footer-logo" src="logo.png" alt="Estate Court Accounting logo" />
+        <p class="footer-right">
+          <a href="mailto:iarmstrong@estatecourtacctllc.com">iarmstrong@estatecourtacctllc.com</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

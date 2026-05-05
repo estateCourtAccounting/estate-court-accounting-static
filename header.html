@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estate Court Accounting Header</title>
+    <style>
+      .header-embed-body {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        background: #ffffff;
+        color: #1b1f24;
+      }
+
+      .site-header {
+        background: #ffffff;
+        border-bottom: 1px solid #d8dfe7;
+      }
+
+      .logo-row {
+        max-width: 1080px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        padding: 0.65rem 1rem 0.35rem;
+      }
+
+      .logo-row a {
+        display: inline-flex;
+        align-items: center;
+      }
+
+      .logo-row img {
+        display: block;
+        height: 72px;
+        width: auto;
+      }
+
+      .nav {
+        max-width: 1080px;
+        margin: 0 auto;
+        display: flex;
+        gap: 1rem;
+        padding: 0.85rem 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .nav a {
+        color: #0b2342;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .nav a:hover,
+      .nav a:focus-visible {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+
+      @media (max-width: 700px) {
+        .logo-row img {
+          height: 58px;
+        }
+
+        .nav {
+          gap: 0.65rem;
+          padding: 0.6rem 0.75rem 0.75rem;
+        }
+      }
+    </style>
+  </head>
+  <body class="header-embed-body">
+    <header class="site-header">
+      <div class="logo-row">
+        <a
+          href="index.html?embed=1"
+          aria-label="Estate Court Accounting home"
+          target="_top"
+          rel="noopener noreferrer"
+        >
+          <img src="logo.png" alt="Estate Court Accounting logo" />
+        </a>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <a
+          href="index.html?embed=1"
+          target="_top"
+          rel="noopener noreferrer"
+          >Home</a
+        >
+        <a
+          href="about.html?embed=1"
+          target="_top"
+          rel="noopener noreferrer"
+          >About</a
+        >
+        <a
+          href="services.html?embed=1"
+          target="_top"
+          rel="noopener noreferrer"
+          >Services</a
+        >
+        <a
+          href="contact.html?embed=1"
+          target="_top"
+          rel="noopener noreferrer"
+          >Contact</a
+        >
+      </nav>
+    </header>
+  </body>
+</html>
