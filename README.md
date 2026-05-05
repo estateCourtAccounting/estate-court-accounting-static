@@ -27,10 +27,10 @@ Minimum required structure:
 - `about.html`
 - `services.html`
 - `contact.html`
-- `assets/styles.css`
-- `assets/site.js`
-- `assets/images/home-page.png`
-- `assets/images/contact-page.png`
+- `styles.css`
+- `site.js`
+- `home-page.png`
+- `contact-page.png`
 
 ## Notes
 
