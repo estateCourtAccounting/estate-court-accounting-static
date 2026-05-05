@@ -1,0 +1,647 @@
+:root {
+  --navy: #0f2f57;
+  --navy-dark: #0b2342;
+  --text: #1b1f24;
+  --muted: #5f6978;
+  --bg: #f8fafc;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.container {
+  width: min(1080px, 92vw);
+  margin: 0 auto;
+}
+
+.site-header {
+  background: var(--white);
+  border-bottom: 1px solid #d8dfe7;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0 0.5rem;
+}
+
+.brand {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--navy-dark);
+}
+
+.subbrand {
+  margin: 0.2rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.phone-link {
+  color: var(--navy-dark);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.logo-row {
+  display: flex;
+  justify-content: center;
+  padding: 0.65rem 0 0.35rem;
+}
+
+.logo-row img {
+  display: block;
+  height: 92px;
+  width: auto;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  padding: 0.85rem 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav a {
+  color: var(--navy-dark);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav a.active {
+  border-bottom: 2px solid var(--navy);
+}
+
+.hero {
+  background: linear-gradient(180deg, #ffffff 0%, #eef3f8 100%);
+  padding: 3.5rem 0;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--navy);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+h1 {
+  color: var(--navy-dark);
+  margin: 0.35rem 0 0.8rem;
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+}
+
+.lead {
+  font-size: 1.1rem;
+  line-height: 1.65;
+  max-width: 820px;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 850px;
+  border: 1px solid #d6dfeb;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.section {
+  padding: 3rem 0;
+}
+
+.alt {
+  background: #edf2f7;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.reviews-grid {
+  display: block;
+  column-count: 2;
+  column-gap: 1rem;
+}
+
+.reviews-grid .card {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 1rem;
+  break-inside: avoid;
+}
+
+.card {
+  background: white;
+  border: 1px solid #d6dfeb;
+  border-radius: 12px;
+  padding: 1.1rem;
+}
+
+.card h2 {
+  margin-top: 0;
+  color: var(--navy-dark);
+  font-size: 1.2rem;
+}
+
+.card ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  line-height: 1.8;
+}
+
+.center {
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  border: 1px solid var(--navy);
+  color: var(--navy);
+  text-decoration: none;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  background: white;
+}
+
+.btn.primary {
+  background: var(--navy);
+  color: white;
+}
+
+.cta-row {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.prose p {
+  line-height: 1.75;
+}
+
+.form {
+  max-width: 760px;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.form input,
+.form select,
+.form textarea {
+  width: 100%;
+  border: 1px solid #bfcada;
+  border-radius: 8px;
+  padding: 0.7rem;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.form button {
+  margin-top: 0.8rem;
+  cursor: pointer;
+}
+
+.note {
+  color: var(--muted);
+}
+
+.site-footer {
+  background: var(--navy-dark);
+  color: #dce4f0;
+  margin-top: 3rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.95rem 0;
+}
+
+.site-footer a {
+  color: #dce4f0;
+  text-decoration: none;
+}
+
+.footer-logo {
+  display: block;
+  height: 46px;
+  width: auto;
+  filter: brightness(0) invert(1);
+}
+
+.footer-left {
+  margin: 0;
+  text-align: left;
+  font-weight: 700;
+}
+
+.footer-right {
+  margin: 0;
+  text-align: right;
+}
+
+.linkedin-link {
+  display: inline-flex;
+  align-items: center;
+  color: #dce4f0;
+  text-decoration: none;
+}
+
+.linkedin-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 2px solid #dce4f0;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: lowercase;
+}
+
+
+
+.flyer {
+  padding: 2rem 0 3rem;
+}
+
+.flyer-wrap {
+  background: #fff;
+  border: 1px solid #d4dbe6;
+  box-shadow: 0 1px 2px rgba(7, 20, 36, 0.06);
+}
+
+.flyer-header {
+  text-align: center;
+  padding: 1.15rem 1rem 1rem;
+}
+
+.flyer-header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 4.2rem);
+  letter-spacing: 0.03em;
+  line-height: 1;
+  color: #111;
+}
+
+.flyer-accounting {
+  margin: 0.2rem 0 1rem;
+  font-size: clamp(1.2rem, 2.7vw, 2rem);
+  letter-spacing: 0.22em;
+  color: var(--navy-dark);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.95rem;
+}
+
+.flyer-accounting span {
+  display: inline-block;
+  width: clamp(40px, 10vw, 120px);
+  height: 2px;
+  background: #9caac1;
+}
+
+.flyer-eyebrow {
+  margin: 0;
+  font-size: 0.98rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--navy-dark);
+}
+
+.flyer-band {
+  background: var(--navy);
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  padding: 0.58rem 1rem;
+  letter-spacing: 0.04em;
+  font-size: 1.08rem;
+}
+
+.flyer-intro {
+  text-align: center;
+  margin: 1.15rem auto;
+  max-width: 830px;
+  font-size: 1.12rem;
+  line-height: 1.5;
+  padding: 0 1rem;
+}
+
+.flyer-columns {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  border-top: 1px solid #dbe2ee;
+  border-bottom: 1px solid #dbe2ee;
+}
+
+.flyer-col {
+  padding: 1.05rem 1rem;
+}
+
+.flyer-col:not(:last-child) {
+  border-right: 1px solid #dbe2ee;
+}
+
+.flyer-col h2 {
+  margin: 0 0 0.4rem;
+  color: var(--navy-dark);
+  font-size: 1.08rem;
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+
+.title-rule {
+  width: 54px;
+  height: 2px;
+  background: #8ea0bf;
+  margin: 0 auto 0.95rem;
+}
+
+.flyer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.flyer-col li {
+  margin: 0 0 0.68rem;
+  line-height: 1.35;
+  position: relative;
+  padding-left: 1.88rem;
+  font-size: 0.99rem;
+}
+
+.flyer-col li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0.05rem;
+  width: 1.35rem;
+  height: 1.35rem;
+  border-radius: 999px;
+  background: var(--navy);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+}
+
+.simple-list li {
+  padding-left: 1.1rem;
+}
+
+.simple-list li::before {
+  content: "•";
+  background: transparent;
+  color: var(--navy-dark);
+  width: auto;
+  height: auto;
+  font-size: 1.3rem;
+  top: -0.15rem;
+}
+
+.who-help {
+  margin: 0 0 0.55rem;
+  font-weight: 700;
+  color: #26364e;
+}
+
+.alone {
+  font-style: italic;
+  color: var(--navy-dark);
+  font-weight: 700;
+  margin: 0.55rem 0 0;
+  font-size: 1.03rem;
+}
+
+.question-box {
+  margin: 0.95rem;
+  border: 2px solid #b9c8df;
+  border-radius: 14px;
+  text-align: center;
+  padding: 0.85rem 1rem;
+}
+
+.question-box h3 {
+  margin: 0;
+  color: var(--navy-dark);
+  font-size: 1.55rem;
+  letter-spacing: 0.01em;
+}
+
+.question-box p {
+  margin: 0.28rem 0 0;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.question-icon {
+  display: inline-block;
+  width: 1.05rem;
+  height: 1.05rem;
+  border: 2px solid var(--navy);
+  border-radius: 999px;
+  vertical-align: middle;
+  margin-right: 0.18rem;
+  position: relative;
+}
+
+.question-icon::after {
+  content: "";
+  position: absolute;
+  width: 0.32rem;
+  height: 0.32rem;
+  border-left: 2px solid var(--navy);
+  border-bottom: 2px solid var(--navy);
+  transform: rotate(-45deg);
+  right: -0.08rem;
+  bottom: -0.09rem;
+}
+
+.contact-band {
+  background: var(--navy);
+  color: #fff;
+  display: block;
+  padding: 0;
+  font-weight: 700;
+}
+
+.contact-band p {
+  margin: 0;
+  padding: 1rem 0.9rem;
+}
+
+.contact-band a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-band .consultation-only {
+  text-align: center;
+  letter-spacing: 0.04em;
+  font-size: 1.08rem;
+}
+
+.serving-line {
+  text-align: center;
+  color: var(--navy-dark);
+  letter-spacing: 0.24em;
+  font-weight: 700;
+  margin: 0.9rem 0 0;
+  padding-bottom: 0.95rem;
+}
+
+.home-actions {
+  display: flex;
+  gap: 0.7rem;
+  justify-content: center;
+  padding-bottom: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .reviews-grid {
+    column-count: 1;
+  }
+
+  .logo-row img {
+    height: 72px;
+  }
+
+  .nav {
+    gap: 0.65rem;
+  }
+
+  .flyer-accounting span {
+    width: 32px;
+  }
+
+  .flyer-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .flyer-col:not(:last-child) {
+    border-right: none;
+    border-bottom: 1px solid #dbe2ee;
+  }
+
+  .contact-band {
+    text-align: center;
+  }
+
+  .contact-band .consultation-only {
+    font-size: 0.92rem;
+    letter-spacing: 0.02em;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 0.55rem;
+  }
+
+  .footer-left,
+  .footer-right {
+    text-align: center;
+  }
+
+  .question-box p {
+    font-size: 1.2rem;
+  }
+
+  .flyer-header h1 {
+    letter-spacing: 0.02em;
+  }
+
+  .flyer-accounting {
+    letter-spacing: 0.14em;
+  }
+
+  .flyer-eyebrow {
+    font-size: 0.83rem;
+    letter-spacing: 0.05em;
+  }
+
+  .flyer-band {
+    font-size: 0.92rem;
+  }
+
+  .flyer-intro {
+    font-size: 1rem;
+    line-height: 1.45;
+  }
+
+  .flyer-col h2 {
+    font-size: 1rem;
+  }
+
+  .flyer-col li {
+    font-size: 0.96rem;
+  }
+
+  .serving-line {
+    letter-spacing: 0.1em;
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .flyer-wrap {
+    max-width: 1160px;
+  }
+
+  .flyer-header h1 {
+    font-size: 4.4rem;
+  }
+
+  .flyer-accounting {
+    font-size: 2.05rem;
+    letter-spacing: 0.24em;
+  }
+
+  .flyer-eyebrow {
+    font-size: 1.03rem;
+  }
+
+  .flyer-band {
+    font-size: 1.14rem;
+  }
+
+  .flyer-intro {
+    font-size: 1.16rem;
+  }
+
+  .flyer-col h2 {
+    font-size: 1.15rem;
+  }
+
+  .flyer-col li {
+    font-size: 1.02rem;
+  }
+}
