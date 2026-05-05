@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.estatecourtacctllc.com/sitemap.xml
+Sitemap: hhttps://estatecourtaccounting.github.io/estate-court-accounting-static/sitemap.xml
